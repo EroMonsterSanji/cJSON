@@ -42,6 +42,7 @@ if (ENABLE_CUSTOM_COMPILER_FLAGS)
         -Wdouble-promotion
         -Wparentheses
         -Wunused-macros
+        -Wmissing-variable-declarations
         )
 endif()
 
