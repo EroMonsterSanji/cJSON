@@ -7,7 +7,7 @@ project(cJSON C)
 
 set(PROJECT_VERSION_MAJOR 1)
 set(PROJECT_VERSION_MINOR 5)
-set(PROJECT_VERSION_PATCH 3)
+set(PROJECT_VERSION_PATCH 4)
 set(CJSON_VERSION_SO 1)
 set(CJSON_UTILS_VERSION_SO 1)
 set(PROJECT_VERSION "${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}.${PROJECT_VERSION_PATCH}")
@@ -41,6 +41,7 @@ if (ENABLE_CUSTOM_COMPILER_FLAGS)
         -Wcomma
         -Wdouble-promotion
         -Wparentheses
+        -Wformat-overflow
         )
 endif()
 
